@@ -45,7 +45,11 @@ struct DisplayAccessApp: App {
     WindowGroup {
       TabView(selection: $selectedTab) {
         NavigationStack {
-          SampleAppsView(displayViewModel: displayViewModel)
+            if #available(iOS 18.0, *) {
+                SampleAppsView(displayViewModel: displayViewModel)
+            } else {
+                // Fallback on earlier versions
+            }
         }
         .tabItem {
           Label("Samples", systemImage: "eyeglasses")

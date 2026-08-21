@@ -133,6 +133,25 @@ enum CarMaintenanceDisplay {
     ),
   ]
 
+    static func helloWorld() -> FlexBox {
+        FlexBox(direction: .column, spacing: 12) {
+            Text("Hello World", style: .heading)
+            Text("こんにちは", style: .body)
+        }
+        .padding(24)
+    }
+    
+    static func translation(
+        english: String,
+        japanese: String
+    ) -> FlexBox {
+        FlexBox(direction: .column, spacing: 16) {
+            Text(english, style: .meta, color: .secondary)
+            Text(japanese, style: .heading)
+        }
+        .padding(24)
+    }
+    
   /// Screen 1: List of car maintenance tutorials with difficulty and duration.
   static func tutorialList(
     onSelectTutorial: @escaping @Sendable (Int) -> Void
@@ -157,6 +176,7 @@ enum CarMaintenanceDisplay {
       }
     }
   }
+    
 
   /// Screen 2: Detail card for a selected tutorial with description and action buttons.
   static func tutorialDetail(
