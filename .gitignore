@@ -1,0 +1,17 @@
+.DS_Store
+DerivedData/
+*.xcuserstate
+*.xcframework/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Local configuration and credentials
+Config.xcconfig
+*.pem
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+key
+key.pub
+

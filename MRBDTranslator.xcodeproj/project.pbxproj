@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB01000000000001 /* MRBDTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000002 /* MRBDTranslatorApp.swift */; };
+		DB01000000000002 /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000003 /* SpeechViewModel.swift */; };
+		DB01000000000003 /* DisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000004 /* DisplayViewModel.swift */; };
+		DB01000000000004 /* TranslationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000005 /* TranslationDisplay.swift */; };
+		DB01000000000005 /* WearablesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000006 /* WearablesViewModel.swift */; };
+		DB01000000000006 /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000007 /* TranslatorView.swift */; };
+		DB01000000000007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02000000000008 /* SettingsView.swift */; };
+		DB01000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB02000000000009 /* Assets.xcassets */; };
+		DB01000000000009 /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = DB0A000000000001 /* MWDATCore */; };
+		DB0100000000000A /* MWDATDisplay in Frameworks */ = {isa = PBXBuildFile; productRef = DB0A000000000002 /* MWDATDisplay */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB02000000000001 /* MRBDTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRBDTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB02000000000002 /* MRBDTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRBDTranslatorApp.swift; sourceTree = "<group>"; };
+		DB02000000000003 /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
+		DB02000000000004 /* DisplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewModel.swift; sourceTree = "<group>"; };
+		DB02000000000005 /* TranslationDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationDisplay.swift; sourceTree = "<group>"; };
+		DB02000000000006 /* WearablesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearablesViewModel.swift; sourceTree = "<group>"; };
+		DB02000000000007 /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
+		DB02000000000008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB02000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB0200000000000A /* MRBDTranslator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MRBDTranslator.entitlements; sourceTree = "<group>"; };
+		DB0200000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB05000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB01000000000009 /* MWDATCore in Frameworks */,
+				DB0100000000000A /* MWDATDisplay in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB03000000000001 = {
+			isa = PBXGroup;
+			children = (
+				DB03000000000003 /* MRBDTranslator */,
+				DB03000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB03000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB02000000000001 /* MRBDTranslator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB03000000000003 /* MRBDTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				DB03000000000004 /* Audio */,
+				DB03000000000005 /* Display */,
+				DB03000000000006 /* ViewModels */,
+				DB03000000000007 /* Views */,
+				DB02000000000009 /* Assets.xcassets */,
+				DB0200000000000A /* MRBDTranslator.entitlements */,
+				DB02000000000002 /* MRBDTranslatorApp.swift */,
+				DB0200000000000B /* Info.plist */,
+			);
+			path = MRBDTranslator;
+			sourceTree = "<group>";
+		};
+		DB03000000000004 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				DB02000000000003 /* SpeechViewModel.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		DB03000000000005 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				DB02000000000004 /* DisplayViewModel.swift */,
+				DB02000000000005 /* TranslationDisplay.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		DB03000000000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB02000000000006 /* WearablesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DB03000000000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB02000000000007 /* TranslatorView.swift */,
+				DB02000000000008 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB04000000000001 /* MRBDTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB07000000000001 /* Build configuration list for PBXNativeTarget "MRBDTranslator" */;
+			buildPhases = (
+				DB05000000000001 /* Sources */,
+				DB05000000000002 /* Frameworks */,
+				DB05000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRBDTranslator;
+			packageProductDependencies = (
+				DB0A000000000001 /* MWDATCore */,
+				DB0A000000000002 /* MWDATDisplay */,
+			);
+			productName = MRBDTranslator;
+			productReference = DB02000000000001 /* MRBDTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB08000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					DB04000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = DB07000000000002 /* Build configuration list for PBXProject "MRBDTranslator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB03000000000001;
+			packageReferences = (
+				DB09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+			);
+			productRefGroup = DB03000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB04000000000001 /* MRBDTranslator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB05000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB01000000000008 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB05000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB01000000000001 /* MRBDTranslatorApp.swift in Sources */,
+				DB01000000000002 /* SpeechViewModel.swift in Sources */,
+				DB01000000000003 /* DisplayViewModel.swift in Sources */,
+				DB01000000000004 /* TranslationDisplay.swift in Sources */,
+				DB01000000000005 /* WearablesViewModel.swift in Sources */,
+				DB01000000000006 /* TranslatorView.swift in Sources */,
+				DB01000000000007 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB06000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT_TOKEN = "";
+				CODE_SIGN_ENTITLEMENTS = MRBDTranslator/MRBDTranslator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MRBDTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				META_APP_ID = 0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MRBDTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB06000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT_TOKEN = "";
+				CODE_SIGN_ENTITLEMENTS = MRBDTranslator/MRBDTranslator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MRBDTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				META_APP_ID = 0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MRBDTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DB06000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB06000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB07000000000001 /* Build configuration list for PBXNativeTarget "MRBDTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB06000000000001 /* Debug */,
+				DB06000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB07000000000002 /* Build configuration list for PBXProject "MRBDTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB06000000000003 /* Debug */,
+				DB06000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB0A000000000001 /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCore;
+		};
+		DB0A000000000002 /* MWDATDisplay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATDisplay;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB08000000000001 /* Project object */;
+}
+
